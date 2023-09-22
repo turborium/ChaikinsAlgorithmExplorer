@@ -1,0 +1,193 @@
+object FormMain: TFormMain
+  Left = 519
+  Height = 480
+  Top = 250
+  Width = 656
+  Caption = 'Chaikins Algorithm Explorer'
+  ClientHeight = 480
+  ClientWidth = 656
+  Constraints.MinHeight = 480
+  Constraints.MinWidth = 480
+  DesignTimePPI = 154
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDefaultPosOnly
+  object PaintBox: TPaintBox
+    Left = 4
+    Height = 472
+    Top = 4
+    Width = 451
+    Align = alClient
+    BorderSpacing.Around = 4
+    OnChangeBounds = PaintBoxChangeBounds
+    OnMouseDown = PaintBoxMouseDown
+    OnMouseMove = PaintBoxMouseMove
+    OnMouseUp = PaintBoxMouseUp
+    OnPaint = PaintBoxPaint
+    OnResize = PaintBoxResize
+  end
+  object PanelParams: TPanel
+    Left = 463
+    Height = 480
+    Top = 0
+    Width = 193
+    Align = alRight
+    BevelOuter = bvNone
+    BorderWidth = 4
+    ClientHeight = 480
+    ClientWidth = 193
+    TabOrder = 0
+    object LabelDivisionsCount: TLabel
+      Left = 4
+      Height = 25
+      Top = 4
+      Width = 185
+      Align = alTop
+      Caption = 'LabelDivisionCount'
+      ParentColor = False
+    end
+    object TrackBarDivisionCount: TTrackBar
+      Left = 4
+      Height = 40
+      Top = 29
+      Width = 185
+      Max = 8
+      OnChange = TrackBarDivisionCountChange
+      Position = 2
+      ShowSelRange = False
+      Align = alTop
+      TabOrder = 0
+    end
+    object BevelA: TBevel
+      Left = 4
+      Height = 23
+      Top = 69
+      Width = 185
+      Align = alTop
+      Shape = bsSpacer
+    end
+    object LabelProportions: TLabel
+      Left = 4
+      Height = 25
+      Top = 92
+      Width = 185
+      Align = alTop
+      Caption = 'LabelProportions'
+      ParentColor = False
+    end
+    object TrackBarProportion: TTrackBar
+      Left = 4
+      Height = 40
+      Top = 117
+      Width = 185
+      Frequency = 10
+      Max = 100
+      OnChange = TrackBarProportionChange
+      PageSize = 10
+      Position = 25
+      ShowSelRange = False
+      Align = alTop
+      TabOrder = 1
+    end
+    object BevelB: TBevel
+      Left = 4
+      Height = 23
+      Top = 157
+      Width = 185
+      Align = alTop
+      Shape = bsSpacer
+    end
+    object CheckBoxClosedPath: TCheckBox
+      Left = 4
+      Height = 29
+      Top = 180
+      Width = 185
+      Align = alTop
+      Caption = 'Closed Path'
+      OnChange = CheckBoxClosedPathChange
+      TabOrder = 2
+    end
+    object BevelC: TBevel
+      Left = 4
+      Height = 23
+      Top = 209
+      Width = 185
+      Align = alTop
+      Shape = bsSpacer
+    end
+    object LabelHelp: TLabel
+      Left = 4
+      Height = 68
+      Top = 382
+      Width = 185
+      Align = alTop
+      Caption = 'Left Click - Move Point'#13#10'Right Click - New Point'#13#10'Middle Click or'#13#10'Right Click+Shift - Delete Point'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clGrayText
+      Font.Height = -13
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelAbout: TLabel
+      Left = 4
+      Height = 13
+      Top = 463
+      Width = 185
+      Align = alBottom
+      Alignment = taRightJustify
+      Caption = 'Turborium(c)'
+      Font.Color = clGrayText
+      Font.Height = -11
+      ParentBidiMode = False
+      ParentColor = False
+      ParentFont = False
+    end
+    object BevelD: TBevel
+      Left = 4
+      Height = 23
+      Top = 359
+      Width = 185
+      Align = alTop
+      Shape = bsSpacer
+    end
+    object LabelInfo: TLabel
+      Left = 4
+      Height = 75
+      Top = 284
+      Width = 185
+      Align = alTop
+      Caption = '1'#13#10'2'#13#10'3'
+      ParentColor = False
+    end
+    object BevelC1: TBevel
+      Left = 4
+      Height = 23
+      Top = 261
+      Width = 185
+      Align = alTop
+      Shape = bsSpacer
+    end
+    object CheckBoxDrawNewPoints: TCheckBox
+      Left = 4
+      Height = 29
+      Top = 232
+      Width = 185
+      Align = alTop
+      Caption = 'Draw New Points'
+      Checked = True
+      OnChange = CheckBoxDrawNewPointsChange
+      State = cbChecked
+      TabOrder = 3
+    end
+  end
+  object BevelVert: TBevel
+    Left = 459
+    Height = 480
+    Top = 0
+    Width = 4
+    Align = alRight
+    Shape = bsLeftLine
+  end
+end
