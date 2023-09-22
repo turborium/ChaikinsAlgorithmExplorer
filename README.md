@@ -1,0 +1,2 @@
+# ChaikinsAlgorithmExplorer
+ChaikinsAlgorithmExplorer (ObjectPascal + Lazarus)
