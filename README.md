@@ -1,5 +1,6 @@
 # ChaikinsAlgorithmExplorer
-ChaikinsAlgorithmExplorer (ObjectPascal + Lazarus) 
+
+[Powered By Lazarus (ObjectPascal)](https://www.lazarus-ide.org/)  
 
 Application for learning the [Chaikins Algorithm](https://www.cs.unc.edu/~dm/UNC/COMP258/LECTURES/Chaikins-Algorithm.pdf).  
   
